@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+
+  <div class="itemContainer">
+    <div class="pageEdit">
+
+      <form class="pageEdit" action="/update" method="post">
+        <h2 class="editItemPage"><%= title %></h2>
+        <input type="hidden" name="updateID" value="<%= id %>">
+        <img src="https://covers.openlibrary.org/b/olid/<%= cover %>-L.jpg" alt="">
+        <h3 class="editItemPage"><%= author %></h3>
+        <textarea class="editItemPage" name="updateReview" id="updateReview"><%= review %></textarea>
+        <button id="update<%= id %>" class="update">Save Changes</button>
+      </form>
+
+      <form class="pageEdit" action="/delete" method="post">
+        <input type="hidden" name="deleteID" value="<%= id %>">
+        <button id="delete<%= id %>" class="delete">Delete Review</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+  <div class="itemContainer">
+    <div class="pageContent">
+    
+
+      <% for(let item of listItems){%>
+        <div class="item">
+          <h2 class="itemContent"><%= item.title %></h2>
+          <img src="https://covers.openlibrary.org/b/olid/<%= item.olid_cover %>-L.jpg" alt="">
+          <h3 class="itemContent">Author: <%= item.author_name %></h3>
+          <p class="itemContent"><%= item.book_review %></p>
+
+          <form action="/edit" method="post">
+            <input type="hidden" name="editID" value="<%= item.id %>">
+            <input type="hidden" name="editItemTitle" value="<%= item.title %>">
+            <input type="hidden" name="edittemAuthor" value="<%= item.author_name %>">
+            <input type="hidden" name="editBookCover" value="<%= item.olid_cover %>">
+            <input type="hidden" name="editReview" value="<%= item.book_review %>">
+            <button id="edit<%=item.id%>" class="edit">Edit Review</button>
+          </form>
+          
+
+        </div>
+      <% } %>
+
+    </div>
+
+  </div>
+</body>
+
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+
+  <div class="itemContainer">
+  
+    <div class="pageAddbook">
+
+      <h2 class="addBookItem"><%= title %></h2>
+      <img src="https://covers.openlibrary.org/b/olid/<%=cover%>-L.jpg" alt="" srcset="">
+      <h3 class="addBookItem"><%= author %></h3>
+
+      <form class="pageAddbook" action="/addBook" method="post">
+        <input type="hidden" name="title" value="<%= title %>">
+        <input type="hidden" name="author" value="<%= author %>">
+        <input type="hidden" name="bookCover" value="<%= cover %>">
+        <textarea class="addBookItem" name="review" id="myreview" placeholder="Write review.."></textarea>
+        <button type="submit" class="addBook">Add book</button>
+      </form>
+      
+      <a href="/">Back</a>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+<%- include('partials/footer.ejs') %>
