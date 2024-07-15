@@ -1,13 +1,14 @@
-![home](https://github.com/user-attachments/assets/e0bf16d1-bb06-4bf4-acea-7cb556a38765)
+![home](https://github.com/user-attachments/assets/b2a4a3cd-25cc-4e05-a26c-eef6d9b53b5b)
 Search for title.
-![search](https://github.com/user-attachments/assets/5c133bdc-0195-45b0-964e-bdcefa1588cb)
+![search](https://github.com/user-attachments/assets/23aaa8d1-4171-4179-a2c8-08e822f4f3f9)
 Write a review of the book then click "Add book" to add.
-![addingBook](https://github.com/user-attachments/assets/6e1357e9-00b2-4505-9a99-9b328606e9e4)
-![homeWithBooks](https://github.com/user-attachments/assets/f8def2bd-ed22-40f1-bd57-0951113e5e0d)
-![homeWithBooks2](https://github.com/user-attachments/assets/6bfc48de-de38-42ab-ba9e-159bb9539d00)
+![addingBook](https://github.com/user-attachments/assets/014c6080-7396-4185-96af-2df79e66f982)
+![homeWithBook](https://github.com/user-attachments/assets/35517b5e-f58d-4870-aa6f-50e9d372ae5e)
+![homeWithBooks](https://github.com/user-attachments/assets/f6e515f4-8410-4974-97ce-372e4f68de73)
+![homeWithBooks2](https://github.com/user-attachments/assets/c1338ef4-4bb3-4dd7-85de-105dd02a89ac)
 Edit review:
-![edit](https://github.com/user-attachments/assets/e6e450c4-3449-4520-896c-7300956b0fdc)
-![homeEdited](https://github.com/user-attachments/assets/09421748-14a8-4eeb-b49a-698c525817f5)
+![edit](https://github.com/user-attachments/assets/3344859d-5815-43bc-b3d9-c2caa3159a6e)
+![homeEdited](https://github.com/user-attachments/assets/edbbd700-f65f-4647-a731-d1da4f589a3f)
 Delete a book review:
-![delete](https://github.com/user-attachments/assets/5416276f-9f53-4418-beed-0351270c7f40)
-![homeDelete](https://github.com/user-attachments/assets/58d990bf-a515-47cc-b804-a7b0632a2fa5)
+![delete](https://github.com/user-attachments/assets/d98a637f-3d75-4107-ba50-a7bda3cbf029)
+![homeDelete](https://github.com/user-attachments/assets/dcf9a9a4-9a97-43da-9a5b-ac89fa02c704)
