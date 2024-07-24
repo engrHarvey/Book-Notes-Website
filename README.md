@@ -47,20 +47,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ git clone https://github.com/engrHarvey/Book-Notes-Website
     $ cd PROJECT_TITLE
-    $ yarn install
-
-## Configure app
-
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-
-- A setting;
-- Another setting;
-- One more setting;
+    $ npm install
 
 ## Running the project
 
-    $ yarn start
-
-## Simple build for production
-
-    $ yarn build
+    $ node index.js
