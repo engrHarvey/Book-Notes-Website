@@ -1,14 +1,66 @@
-![home](https://github.com/user-attachments/assets/b2a4a3cd-25cc-4e05-a26c-eef6d9b53b5b)
-Search for title.
-![search](https://github.com/user-attachments/assets/23aaa8d1-4171-4179-a2c8-08e822f4f3f9)
-Write a review of the book then click "Add book" to add.
-![addingBook](https://github.com/user-attachments/assets/014c6080-7396-4185-96af-2df79e66f982)
-![homeWithBook](https://github.com/user-attachments/assets/35517b5e-f58d-4870-aa6f-50e9d372ae5e)
-![homeWithBooks](https://github.com/user-attachments/assets/f6e515f4-8410-4974-97ce-372e4f68de73)
-![homeWithBooks2](https://github.com/user-attachments/assets/c1338ef4-4bb3-4dd7-85de-105dd02a89ac)
-Edit review:
-![edit](https://github.com/user-attachments/assets/3344859d-5815-43bc-b3d9-c2caa3159a6e)
-![homeEdited](https://github.com/user-attachments/assets/edbbd700-f65f-4647-a731-d1da4f589a3f)
-Delete a book review:
-![delete](https://github.com/user-attachments/assets/d98a637f-3d75-4107-ba50-a7bda3cbf029)
-![homeDelete](https://github.com/user-attachments/assets/dcf9a9a4-9a97-43da-9a5b-ac89fa02c704)
+# Book-Notes-Website
+
+Website using openlibrary API to add Book and review for it.
+
+---
+## Requirements
+
+For development, you will need Node.js, PostgreSQL and a node global package, Yarn, installed in your environement.
+
+### Node
+- #### Node installation on Windows
+
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+
+- #### Node installation on Ubuntu
+
+  You can install nodejs and npm easily with apt install, just run the following commands.
+
+      $ sudo apt install nodejs
+      $ sudo apt install npm
+
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+###
+### Yarn installation
+  After installing node, this project will need yarn too, so just run the following command.
+
+      $ npm install -g yarn
+
+---
+
+## Install
+
+    $ git clone https://github.com/engrHarvey/Book-Notes-Website
+    $ cd PROJECT_TITLE
+    $ yarn install
+
+## Configure app
+
+Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+
+- A setting;
+- Another setting;
+- One more setting;
+
+## Running the project
+
+    $ yarn start
+
+## Simple build for production
+
+    $ yarn build
