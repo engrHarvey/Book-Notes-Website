@@ -3,9 +3,7 @@
 Website using openlibrary API to add Book and review for it.
 
 # Screen capture.
-![home](https://github.com/user-attachments/assets/e0bf16d1-bb06-4bf4-acea-7cb556a38765)
-Search for title.
-![search](https://github.com/user-attachments/assets/5c133bdc-0195-45b0-964e-bdcefa1588cb)
+
 Write a review of the book then click "Add book" to add.
 ![addingBook](https://github.com/user-attachments/assets/6e1357e9-00b2-4505-9a99-9b328606e9e4)
 ![homeWithBooks](https://github.com/user-attachments/assets/f8def2bd-ed22-40f1-bd57-0951113e5e0d)
