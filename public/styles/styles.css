@@ -131,6 +131,245 @@ footer {
   height: 2.5rem;
 }
 
+/* Updated Header Styles */
+header {
+  background: linear-gradient(90deg, #E7D4B5, #D8C3A5);
+  margin: 0;
+  padding: 20px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+header h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  margin: 0;
+  color: #4F4A3F;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.topnav a {
+  color: #4F4A3F;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.topnav a:hover {
+  background-color: #A0937D;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.topnav a.active {
+  background-color: #8E7F70;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #8E7F70;
+  margin-left: 16px;
+  transition: border-color 0.3s;
+}
+
+#search:focus {
+  border-color: #4F4A3F;
+  outline: none;
+}
+
+/* Updated Footer Styles */
+footer {
+  background-color: #E7D4B5;
+  text-align: center;
+  padding: 10px 20px;
+  color: #4F4A3F;
+  font-size: 1rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+  color: #8E7F70;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #4F4A3F;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+  }
+
+  #search {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #4F4A3F;
+}
+
+.container {
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Page Title Styles */
+header h2, .pageTitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4F4A3F;
+  margin-bottom: 20px;
+}
+
+/* Improved Form Styling */
+
+label {
+  font-weight: bold;
+  color: #4F4A3F;
+}
+
+input[type="text"], input[type="number"], input[type="date"], textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #A0937D;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+  border-color: #4F4A3F;
+  box-shadow: 0 0 6px rgba(79, 74, 63, 0.3);
+  outline: none;
+}
+
+/* Improved Button Styles */
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button.addBook, button.edit, button.submit {
+  background-color: #A0937D;
+  color: white;
+}
+
+button.delete {
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Page Content Layout */
+.pageAddbook, .pageEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #F5EFE6;
+  border-radius: 12px;
+  border: 1px solid #E7D4B5;
+  margin-top: 30px;
+}
+
+.pageAddbook h2, .pageEdit h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #4F4A3F;
+  margin-bottom: 20px;
+}
+
+.addBookItem, .editItemPage {
+  margin: 15px 0;
+  text-align: left;
+}
+
+/* Improved Item Cards */
+.item {
+  background-color: #B6C7AA;
+  border: 2px solid #A0937D;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 20px 25px;
+  }
+
+  .pageAddbook, .pageEdit {
+    padding: 20px;
+  }
+
+  .item {
+    padding: 15px;
+  }
+}
+
+
 @media (max-width: 1140px) {
   .pageContent {
     display: grid;
