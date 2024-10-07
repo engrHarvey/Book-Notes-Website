@@ -1,29 +1,38 @@
 <%- include('partials/header.ejs') %>
 
-<body>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg" style="background-color: var(--text-light); border-color: var(--primary-accent);">
+          <div class="card-body p-5">
+            <h2 class="card-title text-center mb-4" style="color: var(--primary-accent);"><%= title %></h2>
+            <div class="text-center mb-4">
+              <img src="https://covers.openlibrary.org/b/olid/<%= cover %>-L.jpg" alt="<%= title %> cover" class="img-fluid rounded shadow" style="max-height: 300px;">
+            </div>
+            <h3 class="text-center mb-4" style="color: var(--secondary-accent);"><%= author %></h3>
 
-  <div class="itemContainer">
-    <div class="pageEdit">
+            <form action="/update" method="post">
+              <input type="hidden" name="updateID" value="<%= id %>">
+              <div class="mb-4">
+                <textarea class="form-control" name="updateReview" id="updateReview" rows="5" style="background-color: var(--primary-bg); color: var(--text-dark); border-color: var(--primary-accent);"><%= review %></textarea>
+              </div>
+              <div class="d-grid gap-3">
+                <button type="submit" id="update<%= id %>" class="btn btn-lg" style="background-color: var(--primary-accent); color: var(--text-light);">Save Changes</button>
+              </div>
+            </form>
 
-      <form class="pageEdit" action="/update" method="post">
-        <h2 class="editItemPage"><%= title %></h2>
-        <input type="hidden" name="updateID" value="<%= id %>">
-        <img src="https://covers.openlibrary.org/b/olid/<%= cover %>-L.jpg" alt="">
-        <h3 class="editItemPage"><%= author %></h3>
-        <textarea class="editItemPage" name="updateReview" id="updateReview"><%= review %></textarea>
-        <button id="update<%= id %>" class="update">Save Changes</button>
-      </form>
-
-      <form class="pageEdit" action="/delete" method="post">
-        <input type="hidden" name="deleteID" value="<%= id %>">
-        <button id="delete<%= id %>" class="delete">Delete Review</button>
-      </form>
-
+            <form action="/delete" method="post" class="mt-4">
+              <input type="hidden" name="deleteID" value="<%= id %>">
+              <div class="d-grid">
+                <button type="submit" id="delete<%= id %>" class="btn btn-lg" style="background-color: var(--accent-1); color: var(--text-light);">Delete Review</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
-
 </body>
-
 
 <%- include('partials/footer.ejs') %>

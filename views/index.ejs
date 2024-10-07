@@ -1,34 +1,30 @@
 <%- include('partials/header.ejs') %>
 
-<body>
-  <div class="itemContainer">
-    <div class="pageContent">
-    
-
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="row g-4">
       <% for(let item of listItems){%>
-        <div class="item">
-          <h2 class="itemContent"><%= item.title %></h2>
-          <img src="https://covers.openlibrary.org/b/olid/<%= item.olid_cover %>-L.jpg" alt="">
-          <h3 class="itemContent">Author: <%= item.author_name %></h3>
-          <p class="itemContent"><%= item.book_review %></p>
-
-          <form action="/edit" method="post">
-            <input type="hidden" name="editID" value="<%= item.id %>">
-            <input type="hidden" name="editItemTitle" value="<%= item.title %>">
-            <input type="hidden" name="edittemAuthor" value="<%= item.author_name %>">
-            <input type="hidden" name="editBookCover" value="<%= item.olid_cover %>">
-            <input type="hidden" name="editReview" value="<%= item.book_review %>">
-            <button id="edit<%=item.id%>" class="edit">Edit Review</button>
-          </form>
-          
-
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm transition-hover border-0" style="background-color: var(--text-light);">
+            <img src="https://covers.openlibrary.org/b/olid/<%= item.olid_cover %>-L.jpg" class="card-img-top img-fluid" alt="<%= item.title %> cover" style="height: 300px; object-fit: cover;">
+            <div class="card-body d-flex flex-column" style="color: var(--text-dark);">
+              <h5 class="card-title fw-bold mb-2" style="color: var(--primary-accent);"><%= item.title %></h5>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">By <%= item.author_name %></h6>
+              <p class="card-text flex-grow-1"><%= item.book_review %></p>
+              <form action="/edit" method="post" class="mt-auto">
+                <input type="hidden" name="editID" value="<%= item.id %>">
+                <input type="hidden" name="editItemTitle" value="<%= item.title %>">
+                <input type="hidden" name="edittemAuthor" value="<%= item.author_name %>">
+                <input type="hidden" name="editBookCover" value="<%= item.olid_cover %>">
+                <input type="hidden" name="editReview" value="<%= item.book_review %>">
+                <button id="edit<%=item.id%>" class="btn btn-outline-primary w-100" style="background-color: var(--primary-accent); color: var(--text-light); border-color: var(--primary-accent);">Edit Review</button>
+              </form>
+            </div>
+          </div>
         </div>
       <% } %>
-
     </div>
-
   </div>
 </body>
-
 
 <%- include('partials/footer.ejs') %>
